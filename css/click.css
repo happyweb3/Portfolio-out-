@@ -1,0 +1,42 @@
+@keyframes clicked {
+  0% {
+      transform: scale(0);
+      opacity: 0
+  }
+
+  50% {
+      transform: scale(1);
+      opacity: 1
+  }
+  100%{
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+#clickEffect {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  z-index: 110;
+}
+
+#clickEffect::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background: rgba(255, 139, 212, 0.367);
+  border-radius: 50%
+}
+
+#clickEffect.effect {
+  display: block
+}
+
+#clickEffect.effect::after {
+  animation: clicked .5s cubic-bezier(.29, 0, .15, 1)
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- 메인서식 -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- 클릭이펙트 서식 -->
+    <link rel="stylesheet" href="./css/click.css">
+
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 메인js -->
+    <script src="./script/main.js" defer></script>
+
+    <!-- 버튼서식 -->
+    <link rel="stylesheet" href="./css/btn.css">
+
+    <!-- 레이아웃 -->
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <!-- 리셋 -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- 벤더프리픽스 -->
+    <script src="./script/prefixfree.min.js"></script>
+
+    <!-- 스크롤 -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- 부드러운 애니메이션 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+
+
+    <!-- 고딕 -->
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500" rel="stylesheet"></head>
+
+    <!-- Itim폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+<body>
+
+    <div id="clickEffect"></div>
+
+    <div class="btn_wrap">
+    <div class="body_wrap">
+    <header>
+        <nav>
+            <div class="opening" id="opening">
+                <video src="./img/Test6.mp4" autoplay="autoplay" muted loop>
+                </video>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="scroll-moveBox flex flex-br-c">
+        <article class="btn_bg">
+            <div class="btn_box">
+            <a href="#opening" class="scroll_move">Home</a>
+            <a href="#profile" class="scroll_move">Proflie</a>
+            <a href="#can" class="scroll_move">Can</a>
+            <a href="#video" class="scroll_move">Video</a>
+            <a href="#reel" class="scroll_move">Reel</a>
+            <a href="#other" class="scroll_move">Other</a>
+            <a href="#illust" class="scroll_move">illust</a>
+            <a href="#rehau" class="scroll_move">Rehau</a>
+            <a href="#footer" class="scroll_move">Footer</a>
+            </div>
+        </article>
+        </div>
+
+        <article class="profile" id="profile">
+            <h2>WHO AM I</h2>
+            <div class="box01"></div>
+            <!-- <img src="./img/i.png" alt="my picture"> -->
+            <div class="p_txt">
+            <p>이름 : 김기태<br>
+                나이 : 19세<br>
+                학력 : 서울디자인고등학교 영상디자인과 재학중<br>
+                수료 내역 : 2019.8 ~ 2019.11 SBS컴퓨터아카데미<br>
+                에프터이펙트, 일러스트레이터, 포토샵 심화 과정 수료(3개월)   <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                2022.8 ~ 2022.11 그린컴퓨터아카데미<br>
+                프론트엔드 개발(웹개발)&웹디자인 및 관리 과정 수료(4개월)<br>
+                소지 자격증 : 컴퓨터그래픽스운용기능사, GTQ 1급                
+            </p>
+            </div>
+            <div class="wave_box">
+            <div class="wave_wrap">
+            <div class="wrap">
+                <div class="circle">
+                  <!-- wave -->
+                  <div class="wave-one"></div>
+                  <div class="wave-two"></div>
+                  <div class="wave-three"></div>
+                  <div class="wave-four"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </article>
+
+        <article class="can" id="can">
+            <h2>I CAN DO</h2>
+
+        <div class="can_img">
+            <img src="./img/AE.png" alt="" class="ae scroll_opacity0"><p class="ae_txt scroll_opacity0">After&nbsp;Effect</p>
+            <img src="./img/Ai.png" alt="" class="ai scroll_opacity0 delay1"><p class="ai_txt scroll_opacity0 delay1">Adobe&nbsp;illustrator</p>
+            <img src="./img/Me.png" alt="" class="me scroll_opacity0 delay2"><p class="me_txt scroll_opacity0 delay2">Media&nbsp;encoder</p>
+            <img src="./img/ID.png" alt="" class="id scroll_opacity0 delay3"><p class="id_txt scroll_opacity0 delay3">Indesing</p>
+            <img src="./img/Pr.png" alt="" class="pr scroll_opacity0 delay4"><p class="pr_txt scroll_opacity0 delay4">Premiere&nbsp;pro</p>
+            <img src="./img/Ps.png" alt="" class="ps scroll_opacity0 delay5"><p class="ps_txt scroll_opacity0 delay5">Photoshop</p> 
+            <img src="./img/C4D.png" alt="" class="c4d scroll_opacity0 delay6"><p class="c4d_txt scroll_opacity0 delay6">C4D</p>    
+        </div>
+
+        <h2 class="and_h2">AND</h2>
+            
+        <div class="and_img">
+            <img src="./img/vs.png" alt="" class="vs scroll_opacity0 delay7"><p class="vs_txt scroll_opacity0 delay7">Visual&nbsp;Studio</p>
+            <img src="./img/html.png" alt="" class="html scroll_opacity0 delay8"><p class="html_txt scroll_opacity0 delay8">Html</p>
+            <img src="./img/java.png" alt="" class="js scroll_opacity0 delay9"><p class="js_txt scroll_opacity0 delay9">JavaScript</p>
+            <img src="./img/css.png" alt="" class="css scroll_opacity0 delay10"><p class="css_txt scroll_opacity0 delay10">Css3</p>
+            <img src="./img/react.png" alt="" class="react scroll_opacity0 delay11"><p class="react_txt scroll_opacity0 delay11">React</p>
+            <img src="./img/jquery.png" alt="" class="jq scroll_opacity0 delay12"><p class="jq_txt scroll_opacity0 delay12">Jquery</p>     
+            <img src="./img/figma.svg" alt="" class="fg scroll_opacity0 delay13"><p class="fg_txt scroll_opacity0 delay13">Figma</p>
+        </div>
+
+
+        </article>
+
+        <article class="video" id="video">
+            <h2 class="video_title">VIDEO</h2>
+            <div class="video_box">
+            <iframe width="1316" height="757" src="https://www.youtube.com/embed/DOjLyLkoZIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="pannel">
+                
+                <div class="pannel_box">
+                    <img src="./img/pannel.jpg" alt="" class="pannel_img">
+
+                    <h2><img src="./img/peace.png" alt="" class="peace"></h2>
+
+                    <p class="video_txt">제57회 대한민국디자인전람회(청소년) 출품작<br>
+                        특선(Special Prize) 수상<br><br>
+                        
+                        기획부터 녹음,일러스트,편집 까지 <br>
+                        영상의 모든 부분을 혼자 담당하였기에<br>
+                         제작에 상당히 긴 시간이 소요되었다.<br>
+                        그래도 이 영상을 제작하며 일러스트 및 편집<br>
+                        실력이 눈에 띌 정도로 발전하였다.<br><br>
+                        
+                        사용 프로그램:<div class="video_img"> <img src="./img/AE.png" alt=""><img src="./img/Ai.png" alt=""><img src="./img/Ps.png" alt=""><img src="./img/Me.png" alt=""></div><br>
+                        </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="reel" id="reel">
+            <h2 class="reel_title">REEL</h2>
+            <div class="reel_video">
+                <iframe width="1310" height="737" src="https://www.youtube.com/embed/2v3RgzBOTkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="reel_sub">
+                <p class="reel_title2">릴 영상</p>
+                <p class="sub_txt">직접만든 영상들을 하나로 합쳐놓은 영상이다. <br>
+                    모든 영상들을 넣은것은 아니지만  대부분 가장 <br>
+                    잘 만들었다 생각되는 영상들로 구성되어있다.<br><br>
+
+                    제작기간 :  2020.1 ~ 2022.11
+                    </p>
+            </div>
+            
+        </article>
+
+        <article class="other" id="other">
+            <h2 class="other_title">Other Video</h2>
+            <div class="other_video">
+                <a href="https://www.youtube.com/watch?v=9DMvcsPD0vw"><img src="./img/vd3.jpg" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=wpQZ4KVW3r4"><img src="./img/vd2.jpg" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=I4qCujWMBUE"><img src="./img/vd1.jpg" alt=""></a>
+            </div>
+
+            <div class="other_video other_video2">
+                <a href="https://www.youtube.com/watch?v=miYTzILwASA"><img src="./img/vd6.jpg" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=miYTzILwASA"><img src="./img/vd5.jpg" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=WayhTCcJKHU"><img src="./img/vd4.jpg" alt=""></a>
+            </div>
+        </article>
+
+        <article class="illust" id="illust">
+            <h2 class="illust_title">Illustrator</h2>
+            <img src="./img/graident.png" alt="" class="il_background">
+            <img src="./img/illust1.jpg" alt="" class="illust1">
+            <img src="./img/illust3.JPG" alt="" class="illust2">
+            <img src="./img/illust2.JPG" alt="" class="illust3">
+     
+            
+        </article>
+
+        <article class="web" id="web">
+            <h2 class="web_title">Front end web development<br>
+                (프론트 엔드 웹 개발)
+                
+                </h2>
+            
+            <img src="./img/pc.jpg" alt="" class="rehau_pc">
+            
+
+            <div class="rehau" id="rehau">
+        <div class="rehau_border">
+            <img src="./img/pc2.png" alt="" class="rehau_img rehau_pc">
+            <a href="https://happyweb3.github.io/rehau/" title="rehau">
+            <img src="./img/pc_blur.png" alt="" class="rehau_blur rehau_img">
+            </a>
+        </div>
+            
+            <p class="rehau_txt1">REHAU</p>
+            <p class="rehau_txt2">기존 사이트의 불편함을 찾아 개선하였고,<br>
+                새롭게 디자인하여 사용자가 더 쉽게 이용할 수<br>
+                있도록 제작하였다.</p>
+            <a href="https://github.com/happyweb3/rehau">
+            <p class="git_txt">GIT</p>
+            </a>
+
+            <div class="rehau_logo">
+            <img src="./img/html.png" alt="" class="rehau_html">
+            <img src="./img/css.png" alt="" class="rehau_css">
+            <img src="./img/java.png" alt="" class="rehau_js">
+            <img src="./img/jquery.png" alt="" class="rehau_jq">
+            <img src="./img/git.png" alt="" class="rehau_git">
+            </div>
+
+            <img src="./img/ppt.PNG" alt="" class="ppt1 ppt">
+            <img src="./img/ppt2.PNG" alt="" class="ppt2 ppt">
+            <img src="./img/ppt3.PNG" alt="" class="ppt3 ppt">
+            </div>
+
+            <h2 class="other_web_title">Other Website</h2>
+            <div class="other_web">
+                
+            <a href="https://happyweb3.github.io/ssuni/" title="ssuni">
+            <img src="./img/ssuni.png" alt="" class="ssuni">
+            </a>
+
+            <a href="https://happyweb3.github.io/animal/" title="animal">
+            <img src="./img/animal.jpg" alt="" class="animal">
+            </a>
+            
+            <a href="https://happyweb3.github.io/kully/" title="kully">
+            <img src="./img/kully.jpg" alt="" class="kully">
+            </a>
+            </div>
+
+            <div class="other_logo">
+            <img src="./img/html.png" alt="">
+            <img src="./img/css.png" alt="" class="other_css">
+            <img src="./img/java.png" alt="">
+            <img src="./img/git.png" alt="" class="other_git">
+            </div>
+
+            <div class="other_logo">
+                <img src="./img/html.png" alt="">
+                <img src="./img/css.png" alt="" class="other_css">
+                <img src="./img/java.png" alt="">
+                <img src="./img/git.png" alt="" class="other_git">
+                </div>
+
+                <div class="other_logo other_logo2">
+                    <img src="./img/html.png" alt="">
+                    <img src="./img/css.png" alt="" class="other_css">
+                    <img src="./img/jquery.png" alt="">
+                    <img src="./img/git.png" alt="" class="other_git">
+                </div>
+
+                <div class="other_logo other_logo3">
+                    <img src="./img/html.png" alt="">
+                    <img src="./img/css.png" alt="" class="other_css">
+                    <img src="./img/java.png" alt="">
+                    <img src="./img/react.png" alt="">
+                    <img src="./img/git.png" alt="" class="other_git">
+                </div>
+
+        </article>
+
+        <article>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer_box" id="footer">
+            <p class="footer_txt">Mail : happywebae@naver.com
+                <br><br>
+                Phone : 010 4249 3666
+                </p>
+
+                <p class="footer_txt2">
+                    Motion Graphic Designer<br><br>
+                    Front End Developer
+
+                </p>
+            <a href="https://github.com/happyweb3" title="github">
+            <img src="./img/git.png" alt="" class="footer_git">
+            </a>
+
+            <a href="https://www.youtube.com/@user-oj1gd9ey7w" title="youtube">
+            <img src="./img/youtube.png" alt="" class="footer_you">
+            </a>
+
+            
+        </div>
+    </footer>
+</div>
+</div>
+
+<script>
+    const icon=document.querySelector('.other_logo');
+    const icon2=document.querySelector('.other_logo2');
+    const icon3=document.querySelector('.other_logo3');
+
+    const img=document.querySelector('.other_web .ssuni');
+    const img2=document.querySelector('.other_web .animal');
+    const img3=document.querySelector('.other_web .kully');
+
+    img.addEventListener('mouseover',function(){
+        icon.classList.add('show')
+    })
+    img.addEventListener('mouseout',function(){
+        icon.classList.remove('show')
+    })
+
+    img2.addEventListener('mouseover',function(){
+        icon2.classList.add('show')
+    })
+    img2.addEventListener('mouseout',function(){
+        icon2.classList.remove('show')
+    })
+    
+    img3.addEventListener('mouseover',function(){
+        icon3.classList.add('show')
+    })
+    img3.addEventListener('mouseout',function(){
+        icon3.classList.remove('show')
+    })
+    
+</script>
+</body>
+</html>

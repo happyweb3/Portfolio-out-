@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../학생방/김수연/1115"
+		},
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../study"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "김기태"
+	}
+}
